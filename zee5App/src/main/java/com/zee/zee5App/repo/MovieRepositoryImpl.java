@@ -310,7 +310,7 @@ public class MovieRepositoryImpl implements MovieRepository {
 		if (result > 0) {
 			return "success";
 		} else {
-			throw new NoDataFoundException("userid not present");
+			throw new NoDataFoundException("moviesid not present");
 		}
 	}
 

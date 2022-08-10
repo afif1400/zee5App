@@ -58,7 +58,6 @@ public class DBUtils {
 		InputStream inputStream = null;
 		try {
 			inputStream = DBUtils.class.getClassLoader().getResourceAsStream("application.properties");
-			System.out.println(inputStream != null);
 			properties.load(inputStream);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -118,8 +117,7 @@ public class DBUtils {
 		} finally {
 			this.closeConnection(connection);
 		}
-
-		return null;
+		return newId;
 	}
 
 }
